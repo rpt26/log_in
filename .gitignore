@@ -2,7 +2,8 @@
 *.sh
 *.bash
 
-
+# ignore the output file of this script
+attendance_log.csv
 
 
 
