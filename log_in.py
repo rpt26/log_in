@@ -67,6 +67,10 @@ window = sg.Window('Materials Science Swipe In',
                    size=(800,480))
 window.maximize()
 
+window.TKroot["cursor"] = "none"
+
+
+
 n = 0
 colours = ['red','darkorange','yellow4','green','blue','indigo']
 # start a counter and a series of colours to rotate around to make it clearer that the
