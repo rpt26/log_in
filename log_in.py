@@ -55,7 +55,7 @@ width, height = sg.Window.get_screen_size()
 # Create the window
 window = sg.Window('Materials Science Swipe In',
                    layout,
-                   margins=(10,10),
+                   margins=(25,25),
                    #disable_minimize=True,
                    #disable_close=False,
                    text_justification='center',
