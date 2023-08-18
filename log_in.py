@@ -98,8 +98,8 @@ while True:
                             text_color=colours[n % 6])
     
      # record the ID and the time to a file   
-     with open(log_file_name,'at') as f:
-         f.write(identity + ',' + time.ctime() + '\n')
+    with open(log_file_name,'at') as f:
+        f.write(identity + ',' + time.ctime() + '\n')
 
 # Finish up by removing from the screen
 window.close()
