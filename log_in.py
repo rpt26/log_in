@@ -30,21 +30,21 @@ if line != 'mifare_id,datetime':
 
 # Define the window's contents
 layout = [[sg.Image('MaterialscienceCOL.png',
-                    background_color='white')],
+                    background_color='white',pad=5)],
           #[sg.Text("Swipe your card to record attendance:",
           #         text_color='black',
           #         background_color='white')],
-          [sg.Input(key='-INPUT-', do_not_clear=False,visible=True)],
-          [sg.Text('Ready', size=(40,1),
+          [sg.Input(key='-INPUT-', do_not_clear=False,visible=True,pad=5)],
+          [sg.Text('Ready', size=(40,1), font=(16),
                    key='-TIME-',
                    text_color='blue',
-                   background_color='white')],
+                   background_color='white',pad=5)],
           [sg.Text("Swipe below",
                    font=('bold', 20),
                    text_color='black',
-                   background_color='white')],
+                   background_color='white',pad=5)],
           [sg.Image('down_arrow.png',
-                    background_color='white')],
+                    background_color='white',pad=5)],
           [sg.Button(bind_return_key=True,
                      visible=False)]
           ]
@@ -55,7 +55,7 @@ width, height = sg.Window.get_screen_size()
 # Create the window
 window = sg.Window('Materials Science Swipe In',
                    layout,
-                   margins=(25,25),
+                   margins=(10,50), #left/right, top/bottom
                    #disable_minimize=True,
                    #disable_close=False,
                    text_justification='center',
