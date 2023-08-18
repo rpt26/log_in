@@ -1,3 +1,13 @@
+# Ignore the random shell scripts I'll no doubt leave around
+*.sh
+*.bash
+
+
+
+
+
+### Auto stuff from here
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
