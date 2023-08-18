@@ -6,7 +6,6 @@ import os
 
 log_file_name = '/home/msm-class/attendance_log.csv'
 
-
 #ensure the expected header lines are there:
 if not os.path.isfile(log_file_name):
     with open(log_file_name,'wt') as f:
