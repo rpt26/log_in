@@ -6,26 +6,6 @@ import os
 
 log_file_name = '/home/msm-class/attendance_log.csv'
 
-#ensure the expected header lines are there:
-if not os.path.isfile(log_file_name):
-    with open(log_file_name,'wt') as f:
-        f.write('mifare_id,datetime\n')
-
-# Jankily check the header
-with open(log_file_name,'rt') as f:
-    lines = f.readlines()
-
-if len(lines) >= 1:
-    line = lines[0].strip()
-else:
-    line = ''
-
-# add the header if it is not there
-if line != 'mifare_id,datetime':
-    lines = ['mifare_id,datetime\n'] + lines
-    with open(log_file_name,'wt') as f:
-        f.writelines(lines)
-
 #set up the GUI
 
 # Define the window's contents
