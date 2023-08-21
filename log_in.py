@@ -6,8 +6,7 @@ import os
 
 log_file_name = '/home/msm-class/attendance_log.csv'
 
-#set up the GUI
-
+# Set up the GUI
 # Define the window's contents
 layout = [[sg.Image('MaterialscienceCOL.png',
                     background_color='white',pad=5)],
